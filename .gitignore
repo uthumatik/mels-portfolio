@@ -1,0 +1,26 @@
+# Images placeholders
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+
+# Videos
+*.mp4
+*.mov
+*.avi
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.log
