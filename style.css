@@ -355,8 +355,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 280px;
-    gap: 4px;
+    gap: 10px;
     margin-bottom: 8rem;
 }
 
@@ -364,13 +363,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    aspect-ratio: 9 / 16;
 }
 .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.8s var(--ease), filter 0.5s ease;
     filter: grayscale(20%) brightness(0.9);
+    background: #0b0b0b;
 }
 .gallery-item:hover img {
     transform: scale(1.06);
@@ -387,8 +388,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .gallery-item:hover::after { opacity: 1; }
 
-.gi-tall { grid-row: span 2; }
-.gi-wide { grid-column: span 2; }
+.gi-tall,
+.gi-wide { grid-row: span 1; grid-column: span 1; }
 
 /* ===================================
    PROJECTS DETAIL
@@ -549,13 +550,27 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .tool-item img {
-    width: 40px;
-    height: 40px;
+    width: 54px;
+    height: 54px;
     object-fit: contain;
     opacity: 0.7;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.tool-item:hover img { opacity: 1; }
+.tool-item:hover img {
+    opacity: 1;
+    transform: scale(1.04);
+}
+
+/* Logos very horizontal need extra visual size */
+.tool-item img[src$="skill-analytics.png"],
+.tool-item img[src$="skill-bigblue.png"],
+.tool-item img[src$="skill-gorgias.png"],
+.tool-item img[src$="skill-lengow.png"],
+.tool-item img[src$="skill-meta.png"],
+.tool-item img[src$="skill-notion.png"],
+.tool-item img[src$="skill-pwx.png"] {
+    width: 70px;
+}
 
 .tool-item span {
     font-size: 0.6rem;
@@ -682,7 +697,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    RESPONSIVE
    =================================== */
 @media (max-width: 1024px) {
-    .gallery-grid { grid-auto-rows: 240px; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
     .offer-grid { grid-template-columns: repeat(2, 1fr); }
     .tools-grid { grid-template-columns: repeat(4, 1fr); }
 }
@@ -702,10 +717,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 200px;
     }
-    .gi-tall { grid-row: span 1; }
-    .gi-wide { grid-column: span 1; }
 
     .project-spread,
     .project-spread.reverse {
@@ -731,11 +743,25 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
     .gallery-grid {
         grid-template-columns: 1fr;
-        grid-auto-rows: 250px;
     }
 
     .offer-grid { grid-template-columns: 1fr; }
     .tools-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+
+    .tool-item img {
+        width: 46px;
+        height: 46px;
+    }
+
+    .tool-item img[src$="skill-analytics.png"],
+    .tool-item img[src$="skill-bigblue.png"],
+    .tool-item img[src$="skill-gorgias.png"],
+    .tool-item img[src$="skill-lengow.png"],
+    .tool-item img[src$="skill-meta.png"],
+    .tool-item img[src$="skill-notion.png"],
+    .tool-item img[src$="skill-pwx.png"] {
+        width: 58px;
+    }
 
     .section-heading { margin-bottom: 3rem; }
 }
