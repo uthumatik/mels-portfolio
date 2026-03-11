@@ -12,253 +12,304 @@
 </head>
 <body>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-content">
-            <p class="hero-label">Portfolio</p>
-            <h1 class="hero-title">Mélanie Silva<br>Pothupitiyage</h1>
-            <div class="hero-divider"></div>
-            <p class="hero-subtitle">Marketing Digital · Luxe · E-Commerce</p>
-        </div>
-        <div class="scroll-line"></div>
-    </section>
-
     <!-- Navigation -->
     <nav class="navbar">
         <ul>
+            <li><a href="#hero">Portfolio</a></li>
             <li><a href="#about">À propos</a></li>
-            <li><a href="#parcours">Parcours</a></li>
             <li><a href="#projets">Réalisations</a></li>
             <li><a href="#formations">Formations</a></li>
-            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#competences">Savoir-faire</a></li>
+            <li><a href="#parcours">Parcours</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- About -->
-    <section id="about" class="section section-about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-text">
-                    <span class="label">À propos</span>
-                    <h2 class="about-heading">Passionnée par l'univers du luxe</h2>
-                    <p>Curieuse et créative, avec un fort intérêt pour le retail, le marketing digital et l'univers du luxe. J'aime découvrir de nouvelles choses, m'inspirer à travers les expositions, les voyages et tout ce qui représente l'art et la créativité.</p>
-                </div>
-            </div>
+    <!-- 1. HERO -->
+    <section id="hero" class="cpage cpage-hero">
+        <div class="cpage-wm" aria-hidden="true">PORTFOLIO</div>
+        <div class="hero-photo">
+            <img src="images/photo.jpg" alt="Mélanie Silva Pothupitiyage">
+        </div>
+        <div class="hero-content">
+            <p class="hero-label">Portfolio</p>
+            <h1 class="hero-name">Mélanie Silva<br>Pothupitiyage</h1>
+            <p class="hero-sub">Marketing Digital · Luxe · E-Commerce</p>
         </div>
     </section>
 
-    <!-- Parcours -->
-    <section id="parcours" class="section section-parcours">
-        <div class="container">
-            <h2 class="section-heading">Parcours</h2>
-            <div class="timeline">
-                <div class="timeline-item reveal">
-                    <div class="tl-dot"></div>
-                    <div class="tl-card">
-                        <span class="tl-date">2025 — 2026</span>
-                        <h3>Eleven Paris</h3>
-                        <p class="tl-role">Chargée E-Commerce & Digital</p>
-                        <p class="tl-location">Paris</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="tl-dot"></div>
-                    <div class="tl-card">
-                        <span class="tl-date">2024 — 2025</span>
-                        <h3>Jeff de Bruges</h3>
-                        <p class="tl-role">Assistante Vente & Communication</p>
-                        <p class="tl-location">Orly</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="tl-dot"></div>
-                    <div class="tl-card">
-                        <span class="tl-date">Juin — Juillet 2024</span>
-                        <h3>Naïs & Isaac Agency</h3>
-                        <p class="tl-role">Assistante Wedding Planner & Marketing</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="tl-dot"></div>
-                    <div class="tl-card">
-                        <span class="tl-date">Avril — Juin 2024</span>
-                        <h3>DEETHINGS — Printemps Haussmann</h3>
-                        <p class="tl-role">Assistante vente & marketing digital</p>
-                        <p class="tl-location">Paris</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="tl-dot"></div>
-                    <div class="tl-card">
-                        <span class="tl-date">Juin — Septembre 2023</span>
-                        <h3>ARMANI</h3>
-                        <p class="tl-role">Conseillère vendeuse</p>
-                        <p class="tl-location">Serris</p>
-                    </div>
-                </div>
+    <!-- 2. À PROPOS -->
+    <section id="about" class="cpage cpage-about">
+        <div class="cpage-wm" aria-hidden="true">À PROPOS</div>
+        <div class="about-left">
+            <div class="about-photo">
+                <img src="images/photomel.jpg" alt="">
             </div>
+            <div class="about-cards">
+                <button class="about-card active" data-idx="0">
+                    <img src="images/project15.jpg" alt="Blog">
+                    <div class="about-card-overlay"><span>Blog</span></div>
+                </button>
+                <button class="about-card" data-idx="1">
+                    <img src="images/project14.jpg" alt="Site web">
+                    <div class="about-card-overlay"><span>Site web</span></div>
+                </button>
+                <button class="about-card" data-idx="2">
+                    <img src="images/merchandising.png" alt="E-Merch">
+                    <div class="about-card-overlay"><span>E-Merch</span></div>
+                </button>
+                <button class="about-card" data-idx="3">
+                    <img src="images/newsletters-ai1.png" alt="Newsletters">
+                    <div class="about-card-overlay"><span>Newsletters IA</span></div>
+                </button>
+                <button class="about-card" data-idx="4">
+                    <img src="images/merchandising-vitrine.png" alt="Vitrines">
+                    <div class="about-card-overlay"><span>Vitrines</span></div>
+                </button>
+            </div>
+        </div>
+        <div class="about-body">
+            <h2 class="cpage-heading">À PROPOS<br>DE MOI</h2>
+            <div class="about-divider"></div>
+            <p>Je suis une personne curieuse et passionnée, avec un fort intérêt pour le retail, le marketing digital et l'univers du luxe. J'aime découvrir de nouvelles choses, m'inspirer à travers les expositions et les voyages.</p>
+            <p>Entre analyse, créativité et sens du détail, j'aime donner du sens à chaque projet que j'entreprends.</p>
         </div>
     </section>
 
-    <!-- Réalisations -->
-    <section id="projets" class="section section-projets">
-        <div class="container">
-            <h2 class="section-heading">Réalisations</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item gi-tall"><img src="images/project1.jpg" alt="Projet"></div>
-                <div class="gallery-item"><img src="images/project4.jpg" alt="Projet"></div>
-                <div class="gallery-item"><img src="images/project5.jpg" alt="Projet"></div>
-                <div class="gallery-item"><img src="images/project7.jpg" alt="Projet"></div>
-                <div class="gallery-item gi-wide"><img src="images/project8.jpg" alt="Projet"></div>
-                <div class="gallery-item"><img src="images/project14.jpg" alt="Projet"></div>
-            </div>
+
+    <!-- 3. GALERIE -->
+    <section id="projets" class="cpage cpage-gallery">
+        <div class="cpage-wm" aria-hidden="true">RÉALISATIONS</div>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="images/project1.jpg" alt=""></div>
+            <div class="gallery-item"><img src="images/project3.jpg" alt=""></div>
+            <div class="gallery-item"><img src="images/project4.jpg" alt=""></div>
+            <div class="gallery-item"><img src="images/project5.jpg" alt=""></div>
+            <div class="gallery-item"><img src="images/project7.jpg" alt=""></div>
+            <div class="gallery-item"><img src="images/project8.jpg" alt=""></div>
+            <div class="gallery-item"><img src="images/project10.jpg" alt=""></div>
+            <div class="gallery-item"><img src="images/project11.jpg" alt=""></div>
+            <div class="gallery-item"><img src="images/project13.jpg" alt=""></div>
+            <div class="gallery-item"><img src="images/project14.jpg" alt=""></div>
+            <div class="gallery-item"><img src="images/project15.jpg" alt=""></div>
+            <div class="gallery-item"><img src="images/project6.jpg" alt=""></div>
         </div>
+    </section>
 
-        <div class="container projects-container">
-            <div class="project-spread reveal">
-                <div class="project-img">
-                    <img src="images/project15.jpg" alt="Création d'articles de blog">
+    <!-- 3a. SITE WEB & CONTENUS -->
+    <section class="cpage cpage-siteweb">
+        <h2 class="cpage-heading-lg reveal">site web<br>&amp; contenus</h2>
+        <div class="siteweb-layout">
+            <div class="siteweb-devices">
+                <div class="device-laptop">
+                    <div class="device-laptop-screen">
+                        <video src="images/site-web-video.mov" autoplay muted loop playsinline></video>
+                    </div>
+                    <div class="device-laptop-chin"></div>
+                    <div class="device-laptop-base"></div>
                 </div>
-                <div class="project-info">
-                    <span class="label">Eleven Paris</span>
-                    <h3>Création d'articles de blog</h3>
-                    <p>Rédaction d'articles de blog pour la marque Elevenparis, mettant en avant les collections et l'univers de la marque à travers un contenu éditorial engageant.</p>
+                <div class="device-iphone">
+                    <div class="device-iphone-frame">
+                        <div class="device-iphone-notch"></div>
+                        <div class="device-iphone-screen">
+                            <video src="images/blog-video.MP4" autoplay muted loop playsinline></video>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="project-spread reverse reveal">
-                <div class="project-img">
-                    <img src="images/project14.jpg" alt="Site web & contenus">
-                </div>
-                <div class="project-info">
-                    <span class="label">E-Commerce</span>
-                    <h3>Site web & contenus</h3>
+            <div class="siteweb-text">
+                <div class="proj-block reveal">
+                    <p class="proj-label">E-Commerce · Eleven Paris</p>
+                    <h3 class="proj-title">Site web &amp; contenus</h3>
                     <p>Gestion du site web de la marque : création de bannières, mise en page des collections, rédaction des fiches produits, articles de blog et retouche photo pour une expérience en ligne cohérente et raffinée.</p>
                 </div>
-            </div>
-
-            <div class="project-spread reveal">
-                <div class="project-img">
-                    <img src="images/merchandising.png" alt="E-merchandising">
-                </div>
-                <div class="project-info">
-                    <span class="label">Digital</span>
-                    <h3>E-merchandising</h3>
-                    <p>Gestion complète du merchandising en ligne pour optimiser l'expérience utilisateur et maximiser les ventes.</p>
-                </div>
-            </div>
-
-            <div class="project-spread reverse reveal">
-                <div class="project-img">
-                    <img src="images/newsletters-ai1.png" alt="Newsletters & IA">
-                </div>
-                <div class="project-info">
-                    <span class="label">Création</span>
-                    <h3>Newsletters & IA</h3>
-                    <p>Génération de visuels à l'aide d'IA destinés à l'e-shop, aux newsletters et aux articles de blog. Rédaction de newsletters pour mettre en avant les collections et actualités de la marque.</p>
-                </div>
-            </div>
-
-            <div class="project-spread reveal">
-                <div class="project-img">
-                    <img src="images/merchandising-vitrine.png" alt="Merchandising & Vitrines">
-                </div>
-                <div class="project-info">
-                    <span class="label">Retail</span>
-                    <h3>Merchandising & Vitrines</h3>
-                    <p>Conception de vitrines de A à Z, du choix des produits et éléments décoratifs à la disposition finale, en veillant à créer une mise en scène cohérente, attractive et adaptée aux temps forts commerciaux.</p>
+                <div class="proj-block reveal">
+                    <p class="proj-label">Contenu Éditorial</p>
+                    <h3 class="proj-title">Articles de blog</h3>
+                    <p>Rédaction d'articles de blog pour la marque Eleven Paris, mettant en avant les collections et l'univers de la marque à travers un contenu éditorial engageant.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Formations -->
-    <section id="formations" class="section section-formations">
-        <div class="container">
-            <h2 class="section-heading">Formations</h2>
-            <div class="formations-grid">
-                <div class="formation-card reveal">
-                    <div class="formation-logo">
-                        <img src="images/supluxe-logo.png" alt="Sup de Luxe">
-                    </div>
-                    <h3>Sup de Luxe</h3>
-                    <p class="formation-degree">MBA Luxury Brand Marketing &<br>International Management</p>
-                    <p class="formation-location">Paris, France</p>
+    <!-- 3b. NEWSLETTERS & IA -->
+    <section class="cpage cpage-newsletters">
+        <h2 class="cpage-heading-lg reveal">NEWSLETTERS<br>&amp; IA</h2>
+        <div class="newsletter-layout">
+            <div class="newsletter-media reveal">
+                <img src="images/newsletters-ai1.png" alt="Newsletter IA 1">
+                <img src="images/newsletters-ai2.png" alt="Newsletter IA 2">
+                <video src="images/newsletter-video-ai1.mov" autoplay muted loop playsinline class="newsletter-vid"></video>
+            </div>
+            <div class="newsletter-text">
+                <div class="reveal">
+                    <p class="proj-label">Intelligence Artificielle</p>
+                    <h3 class="proj-title">Visuels générés par IA</h3>
+                    <p>Génération de visuels à l'aide d'IA (shootings et aplats) destinés à l'e-shop, aux newsletters et aux articles de blog de Eleven Paris.</p>
                 </div>
-                <div class="formation-card reveal">
-                    <div class="formation-logo">
-                        <img src="images/munster-logo.png" alt="Munster Technological University">
-                    </div>
-                    <h3>Munster Technological University</h3>
-                    <p class="formation-degree">Échange universitaire<br>Marketing & International Business</p>
-                    <p class="formation-location">Cork, Ireland</p>
-                </div>
-                <div class="formation-card reveal">
-                    <div class="formation-logo">
-                        <img src="images/iut-logo.png" alt="IUT de Créteil">
-                    </div>
-                    <h3>IUT de Créteil</h3>
-                    <p class="formation-degree">BUT 3 Techniques de Commercialisation</p>
-                    <p class="formation-location">Créteil, France</p>
+                <div class="reveal">
+                    <p class="proj-label">CRM · Email Marketing</p>
+                    <h3 class="proj-title">Newsletters de marque</h3>
+                    <p>Rédaction et création graphique de newsletters pour Eleven Paris afin de mettre en avant les collections et les actualités de la marque.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Compétences -->
-    <section id="competences" class="section section-competences">
-        <div class="container">
-            <h2 class="section-heading">Savoir-faire</h2>
-
-            <div class="offer-grid">
-                <div class="offer-card reveal">
-                    <h3>Expérience Client &<br>Merchandising</h3>
+    <!-- 3c. MERCHANDISING -->
+    <section class="cpage cpage-merch">
+        <h2 class="cpage-heading-lg reveal">MERCHANDISING</h2>
+        <div class="merch-layout">
+            <div class="merch-media reveal">
+                <img src="images/merchandising.png" alt="E-Merchandising">
+                <img src="images/merchandising-vitrine.png" alt="Vitrine">
+            </div>
+            <div class="merch-text">
+                <div class="reveal">
+                    <p class="proj-label">Digital</p>
+                    <h3 class="proj-title">E-Merchandising</h3>
+                    <p>Gestion du site web : création de bannières, mise en page des collections, rédaction des fiches produits et retouche photo pour garantir une expérience en ligne cohérente et raffinée.</p>
                 </div>
-                <div class="offer-card reveal">
+                <div class="reveal">
+                    <p class="proj-label">Retail</p>
+                    <h3 class="proj-title">Merchandising &amp; Vitrines</h3>
+                    <p>Conception et mise en place de vitrines de A à Z, du choix des produits à la disposition finale, en veillant à créer une mise en scène cohérente et adaptée aux temps forts commerciaux.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FORMATIONS & COMPÉTENCES -->
+    <section id="formations" class="cpage cpage-formations">
+        <h2 class="cpage-heading-lg reveal">FORMATIONS &amp;<br>COMPÉTENCES</h2>
+        <div class="formations-cards">
+            <div class="fcard reveal">
+                <div class="fcard-logo"><img src="images/supluxe-logo.png" alt="Sup de Luxe"></div>
+                <h3>Sup de Luxe</h3>
+                <p class="fcard-loc">Paris, France</p>
+                <p class="fcard-deg">MBA (Master 1) Luxury Brand Marketing &amp; International Management</p>
+            </div>
+            <div class="fcard reveal">
+                <div class="fcard-logo"><img src="images/munster-logo.png" alt="MTU"></div>
+                <h3>Munster Technological University</h3>
+                <p class="fcard-loc">Cork, Ireland</p>
+                <p class="fcard-deg">Échange universitaire — Marketing &amp; International Business</p>
+            </div>
+            <div class="fcard reveal">
+                <div class="fcard-logo"><img src="images/iut-logo.png" alt="IUT"></div>
+                <h3>IUT de Créteil</h3>
+                <p class="fcard-loc">Créteil, France</p>
+                <p class="fcard-deg">BUT 3 Techniques de Commercialisation</p>
+            </div>
+        </div>
+        <div class="skills-strip reveal">
+            <div class="skill-logo"><img src="images/skill-photoshop.png" alt="Photoshop"><span>Photoshop</span></div>
+            <div class="skill-logo"><img src="images/skill-affinity.png" alt="Affinity"><span>Affinity</span></div>
+            <div class="skill-logo"><img src="images/skill-meta.png" alt="Meta"><span>Meta Ads</span></div>
+            <div class="skill-logo"><img src="images/skill-notion.png" alt="Notion"><span>Notion</span></div>
+            <div class="skill-logo"><img src="images/skill-shopify.png" alt="Shopify"><span>Shopify</span></div>
+            <div class="skill-logo"><img src="images/skill-klaviyo.png" alt="Klaviyo"><span>Klaviyo</span></div>
+            <div class="skill-logo"><img src="images/skill-gorgias.png" alt="Gorgias"><span>Gorgias</span></div>
+            <div class="skill-logo"><img src="images/skill-klarna.png" alt="Klarna"><span>Klarna</span></div>
+            <div class="skill-logo"><img src="images/skill-lengow.png" alt="Lengow"><span>Lengow</span></div>
+            <div class="skill-logo"><img src="images/skill-bigblue.png" alt="Bigblue"><span>Bigblue</span></div>
+            <div class="skill-logo"><img src="images/skill-analytics.png" alt="Analytics"><span>Analytics</span></div>
+            <div class="skill-logo"><img src="images/skill-pwx.png" alt="PWX"><span>PWX</span></div>
+        </div>
+    </section>
+
+    <!-- 5. SAVOIR-FAIRE -->
+    <section id="competences" class="cpage cpage-savoirfaire">
+        <div class="sf-bg">
+            <img src="images/photooutfit.png" alt="">
+        </div>
+        <div class="sf-content">
+            <p class="sf-kicker">SAVOIR-FAIRE</p>
+            <p class="sf-sub">Ce que je peux apporter</p>
+            <div class="sf-blocks">
+                <div class="sf-block reveal">
+                    <h3>Expérience Client<br>&amp; Merchandising</h3>
+                </div>
+                <div class="sf-block reveal">
                     <h3>Création<br>de contenu</h3>
                 </div>
-                <div class="offer-card reveal">
-                    <h3>Gestion du<br>E-commerce</h3>
+                <div class="sf-block reveal">
+                    <h3>Gestion du<br>E-Commerce</h3>
                 </div>
-                <div class="offer-card reveal">
-                    <h3>CRM &<br>SEO</h3>
+                <div class="sf-block reveal">
+                    <h3>CRM &amp;<br>SEO</h3>
                 </div>
-            </div>
-
-            <div class="tools-grid">
-                <div class="tool-item reveal"><img src="images/skill-photoshop.png" alt="Photoshop"><span>Photoshop</span></div>
-                <div class="tool-item reveal"><img src="images/skill-affinity.png" alt="Affinity"><span>Affinity</span></div>
-                <div class="tool-item reveal"><img src="images/skill-meta.png" alt="Meta"><span>Meta</span></div>
-                <div class="tool-item reveal"><img src="images/skill-notion.png" alt="Notion"><span>Notion</span></div>
-                <div class="tool-item reveal"><img src="images/skill-shopify.png" alt="Shopify"><span>Shopify</span></div>
-                <div class="tool-item reveal"><img src="images/skill-klaviyo.png" alt="Klaviyo"><span>Klaviyo</span></div>
-                <div class="tool-item reveal"><img src="images/skill-gorgias.png" alt="Gorgias"><span>Gorgias</span></div>
-                <div class="tool-item reveal"><img src="images/skill-klarna.png" alt="Klarna"><span>Klarna</span></div>
-                <div class="tool-item reveal"><img src="images/skill-lengow.png" alt="Lengow"><span>Lengow</span></div>
-                <div class="tool-item reveal"><img src="images/skill-bigblue.png" alt="Bigblue"><span>Bigblue</span></div>
-                <div class="tool-item reveal"><img src="images/skill-analytics.png" alt="Google Analytics"><span>Google Analytics</span></div>
-                <div class="tool-item reveal"><img src="images/skill-pwx.png" alt="PWX"><span>PWX</span></div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact" class="footer">
-        <div class="footer-inner">
-            <p class="footer-label">Contact</p>
-            <h2 class="footer-heading">Merci</h2>
-            <p class="footer-name">Mélanie Silva Pothupitiyage</p>
-            <div class="footer-links">
+    <!-- 6. MON PARCOURS -->
+    <section id="parcours" class="cpage cpage-parcours">
+        <div class="cpage-wm" aria-hidden="true">PARCOURS</div>
+        <h2 class="cpage-heading">MON PARCOURS</h2>
+        <div class="exp-grid">
+            <div class="exp-card reveal">
+                <span class="exp-date">Juin — Sept. 2023</span>
+                <h3 class="exp-company">ARMANI</h3>
+                <p class="exp-place">Serris</p>
+                <p class="exp-role">Conseillère vendeuse</p>
+            </div>
+            <div class="exp-card reveal">
+                <span class="exp-date">Avr. — Juin 2024</span>
+                <h3 class="exp-company">DEETHINGS</h3>
+                <p class="exp-place">Printemps Haussmann</p>
+                <p class="exp-role">Assistante vente &amp; marketing digital</p>
+            </div>
+            <div class="exp-card reveal">
+                <span class="exp-date">Juin — Juil. 2024</span>
+                <h3 class="exp-company">Naïs &amp; Isaac</h3>
+                <p class="exp-role">Assistante Wedding Planner &amp; Marketing</p>
+            </div>
+            <div class="exp-card reveal">
+                <span class="exp-date">2024 — 2025</span>
+                <h3 class="exp-company">Jeff de Bruges</h3>
+                <p class="exp-place">Orly</p>
+                <p class="exp-role">Assistante Vente &amp; Communication</p>
+            </div>
+            <div class="exp-card reveal">
+                <span class="exp-date">2025 — 2026</span>
+                <h3 class="exp-company">Eleven Paris</h3>
+                <p class="exp-place">Paris</p>
+                <p class="exp-role">Chargée E-Commerce &amp; Digital</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CONTACT / MERCI -->
+    <footer id="contact" class="cpage cpage-merci">
+        <div class="merci-wm" aria-hidden="true">MERCI</div>
+        <div class="merci-inner">
+            <h2 class="merci-heading">merci</h2>
+            <p class="merci-name">Mélanie Silva Pothupitiyage</p>
+            <div class="merci-links">
                 <a href="mailto:melanie.silva@example.com">Email</a>
-                <a href="https://www.linkedin.com/in/melanie-silva" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
                 <a href="tel:+33600000000">Téléphone</a>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Mélanie Silva Pothupitiyage</p>
-        </div>
+        <p class="merci-copy">© 2026 Mélanie Silva Pothupitiyage</p>
     </footer>
+
+    <!-- PROJECT MODAL -->
+    <div id="proj-modal" class="proj-modal">
+        <div class="proj-modal-backdrop"></div>
+        <div class="proj-modal-box">
+            <button class="proj-modal-close">&times;</button>
+            <div class="proj-modal-media"></div>
+            <div class="proj-modal-info">
+                <span class="proj-modal-label"></span>
+                <h3 class="proj-modal-title"></h3>
+                <p class="proj-modal-desc"></p>
+            </div>
+            <button class="proj-modal-prev">&#8249;</button>
+            <button class="proj-modal-next">&#8250;</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
